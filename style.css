@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+h1, h2, h3, a, li {
+    font-family: var(--primary-font);
+    font-size: 30px;
+    color: aliceblue;
+}
+
+p {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: aliceblue;
+    line-height: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    background-image: url("https://images8.alphacoders.com/468/468739.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header > .content {
+    width: 90%;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-variant: small-caps;
+    font-size: 5.1em;
+    text-align: center;
+}
+
+header ul {
+    flex-wrap: wrap;
+}
+
+header ul li {
+    display: inline;
+    font-size: 1.4em;
+    font-weight: 200;
+    text-shadow: 5px 3px 2px rgb(17, 81, 119);
+}
+
+header li:not(:last-child)::after {
+    content: "|";
+    font-weight: bolder;
+    margin: 0 5px;
+}
+
+main {
+    max-width: 800px;
+    width: 90vw;
+    margin: auto;
+}
+
+main button {
+    width: 50px;
+    padding: 2px;
+    margin: 0 4px;
+    background-color:aliceblue;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+main button:hover {
+    scale: 1.5;
+    margin: 0 6px;
+}
+
+section p {
+    text-indent: 5px;
+}
+
+section:not(.project) {
+    margin: 10px;
+}
+
+iframe {
+    background-color: gray;
+    width: 70vw;
+    height: calc(70vw);
+    max-width: 450px;
+    max-height: 225px;
+}
+
+@media (max-width: 400px) {
+    iframe {
+        width: 250px;
+        height: 150px;
+        margin: auto;
+    }
+}
+
+footer {
+    background-color: black;
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+footer p,a {
+    color: white;
+    font-size: 1em;
+    font-variant: small-caps;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
